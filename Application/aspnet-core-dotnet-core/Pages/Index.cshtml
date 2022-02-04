@@ -1,0 +1,50 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home Page - ASP.NET Core";
+}
+
+<div class="main-container">
+    <div class="cloud-image">
+        <img src="~/images/logo.svg" />
+    </div>
+    <div class="content">
+        <!--
+        <div class="tweet-container">
+            <a href="http://twitter.com/intent/tweet/?text=I%20just%20created%20a%20new%20ASP.net%20website%20on%20Azure%20using%20Azure%20DevOps%20Project&hashtags=AzureDevOpsProject%2CVSTS%20%40Azure%20%40VSTS">
+                <img src="~/images/tweetThis.svg" />
+            </a>
+        </div>
+        -->
+        <div class="content-body">
+            <div class="success-text">Welcome To Smallcase!</div>
+            <div class="description line-1"> A smallcase is a basket of stocks that reflects an idea</div>
+            <div class="description line-2"> Build a diversified long-term portfolio of stocks & ETFs</div>
+            <br>
+            <!--
+            <div class="description line-3"><img src="~/images/azuresql.svg" style="width: 38px; height: 38px" />​ Powered by Azure SQL Database </div>
+            -->
+            <div class="description line-3"><font size="2"> Total Visits: @Model.HitCount &nbsp;&nbsp;&nbsp; Last Visit: @Model.LastAccessDate </font></div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Simple to understand </h2>
+        <p>
+            Smallcases are modern investing products based on simple ideas you can understand.
+        </p>
+        <p><a class="btn btn-light" href="https://www.smallcase.com/">Invest Now &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Managed by professionals</h2>
+        <p>Smallcases are created by India’s leading finance experts & backed by solid research.</p>
+        <p><a class="btn btn-light" href="https://www.smallcase.com/discover/creators">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Designed for you</h2>
+        <p>Smallcases are fully customizable. Edit your smallcase constituents any time or create your own smallcase.</p>
+        <p><a class="btn btn-light" href="https://www.smallcase.com/discover/explore">Explore Collection &raquo;</a></p>
+    </div>
+</div>
+
